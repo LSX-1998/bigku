@@ -15,6 +15,7 @@ function like(btn, entityType, entityId, entityUserId, postId){
                 $(btn).children("i").text(data.likeCount);
                 $(btn).children("b").text(data.likeStatus==1?'已赞':'赞');
             } else {
+                alert("有问题")
                 alert(data.msg);
             }
         }

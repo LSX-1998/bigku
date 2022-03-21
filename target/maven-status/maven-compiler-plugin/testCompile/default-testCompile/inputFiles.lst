@@ -1,2 +1,10 @@
 D:\Lsx-community\src\test\java\com\lsx\community\LoggerTests.java
+D:\Lsx-community\src\test\java\com\lsx\community\RedisTests.java
+D:\Lsx-community\src\test\java\com\lsx\community\ElasticsearchTests.java
+D:\Lsx-community\src\test\java\com\lsx\community\SensitiveTests.java
+D:\Lsx-community\src\test\java\com\lsx\community\BlockingQueueTests.java
+D:\Lsx-community\src\test\java\com\lsx\community\MailTests.java
+D:\Lsx-community\src\test\java\com\lsx\community\TransactionTests.java
 D:\Lsx-community\src\test\java\com\lsx\community\MapperTest.java
+D:\Lsx-community\src\test\java\com\lsx\community\QuartzTests.java
+D:\Lsx-community\src\test\java\com\lsx\community\ThreadPoolTests.java

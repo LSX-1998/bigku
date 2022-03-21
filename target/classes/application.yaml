@@ -33,6 +33,63 @@ spring:
       #content-type: text/html
     mode: HTML5
 
+    ## MailProperties
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 1209846193@qq.com
+    password: dimgkjmhfwypjcje
+    protocol: smtps
+    properties.mail.smtp.ssl.enable: true
+  redis:
+    port: 6379
+    database: 2
+    host: localhost
+
+  rabbitmq:
+    host: 127.0.0.1
+    username: guest
+    password: guest
+    #虚拟主机
+    virtual-host: /
+    port: 5672
+    listener:
+      simple:
+        default-requeue-rejected: false
+
+
+  data:
+    elasticsearch:
+      cluster-name:  lsx-nowcoder
+      cluster-nodes: 127.0.0.1:9300
+  task:
+    execution:
+      pool:
+        core-size: 5
+        max-size: 15
+        queue-capacity: 100
+
+    scheduling:
+      pool:
+        size: 5
+
+
+  quartz:
+    job-store-type: jdbc
+    scheduler-name: communintyScheduler
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceId: AUTO
+          jobStore:
+            class: org.quartz.impl.jdbcjobstore.JobStoreTX
+            driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+            isClustered: true
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool
+            threadCount: 5
+
 # MybatisProperties
 mybatis:
   mapper-locations: classpath:mapper/*.xml
@@ -45,6 +102,17 @@ mybatis:
 logging:
   level:
     com.lsx.community: debug
-  file:
-    path: D:\Lsx-community\community.log
+
+#community
+community:
+  path:
+    domain: http://localhost:8080
+    upload: D:\work\data\upload
+
+
+
+# TaskExecutionProperties
+
+
+
 
